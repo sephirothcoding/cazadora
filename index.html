@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blue Background Gradient</title>
+  <style>
+    /* CSS for the background gradient */
+    body {
+      background: linear-gradient(to bottom, #6495ED, #0000FF);
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* CSS for the horizontal rectangle box */
+    .seph-horizontal-rectangle {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px; /* Adjust width as needed */
+      height: 400px; /* Adjust height as needed */
+      background: #FFFFFF;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    /* CSS for the hexagon shape */
+    .seph-hexagon {
+      width: 200px; /* Adjust width as needed */
+      height: 230px; /* Adjust height as needed */
+      background: #FFFFFF;
+      clip-path: polygon(
+        50% 0%,  /* Top */
+        100% 25%, /* Top Right */
+        100% 75%, /* Bottom Right */
+        50% 100%, /* Bottom */
+        0% 75%,  /* Bottom Left */
+        0% 25%   /* Top Left */
+      );
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    /* CSS for the hexagon image */
+    .seph-hexagon img {
+      width: 100%; /* Adjust size as needed */
+      height: auto;
+      object-fit: cover;
+    }
+    
+    /* CSS for the text and social media links */
+    .seph-hexagon-content {
+      width: 140px;
+      padding: 10px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.7);
+      color: #FFFFFF;
+      margin-top: 10px;
+    }
+    
+    /* CSS for the gallery of images */
+    .seph-gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    
+    .seph-gallery img {
+      width: calc(25% - 10px); /* Adjust width as needed */
+      height: auto;
+      object-fit: cover;
+      margin: 5px;
+    }
+    
+    /* CSS for the text below the horizontal box */
+    .seph-text {
+      text-align: center;
+      margin-top: 20px;
+      color: #FFFFFF;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Horizontal rectangle box -->
+  <div class="seph-horizontal-rectangle">
+    <!-- Hexagon-shaped box -->
+    <div class="seph-hexagon">
+      <!-- Hexagon image -->
+      <img src="https://xatimg.com/image/8zNCki6KwtTv.jpg" alt="Hexagon Image">
+    </div>
+    
+    <!-- Text content -->
+    <div class="seph-hexagon-content">
+      <!-- Add your text content here -->
+    </div>
+    
+    <!-- Gallery of images -->
+    <div class="seph-gallery">
+      <img src="https://xatimg.com/image/8zNCki6KwtTv.jpg" alt="Image 1">
+      <img src="https://xatimg.com/image/8zNCki6KwtTv.jpg" alt="Image 2">
+      <img src="https://xatimg.com/image/8zNCki6KwtTv.jpg" alt="Image 3">
+      <img src="https://xatimg.com/image/8zNCki6KwtTv.jpg" alt="Image 4">
+    </div>
+  </div>
+  
+  <!-- Text below the horizontal box -->
+  <div class="seph-text">
+    This is some sample text below the horizontal box.
+  </div>
+</body>
+</html>
